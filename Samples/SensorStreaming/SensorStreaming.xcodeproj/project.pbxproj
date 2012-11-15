@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671F9302162F244C00003CFD /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671F92FE162F244000003CFD /* IOBluetooth.framework */; };
+		671F9303162F244C00003CFD /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671F92FF162F244000003CFD /* IOBluetoothUI.framework */; };
+		6735455716545D7900C6B9B1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6735455616545D7900C6B9B1 /* RobotKit.framework */; };
+		6735455816545D8300C6B9B1 /* RobotKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6735455616545D7900C6B9B1 /* RobotKit.framework */; };
+		673C5CB01598DC4300C444DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C5CAF1598DC4300C444DE /* Cocoa.framework */; };
+		673C5CBA1598DC4300C444DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 673C5CB81598DC4300C444DE /* InfoPlist.strings */; };
+		673C5CBC1598DC4300C444DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 673C5CBB1598DC4300C444DE /* main.m */; };
+		673C5CC01598DC4300C444DE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 673C5CBE1598DC4300C444DE /* Credits.rtf */; };
+		673C5CC31598DC4300C444DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 673C5CC21598DC4300C444DE /* AppDelegate.m */; };
+		673C5CC61598DC4400C444DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673C5CC41598DC4400C444DE /* MainMenu.xib */; };
+		673C5CCE1598DC4400C444DE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C5CCD1598DC4400C444DE /* SenTestingKit.framework */; };
+		673C5CCF1598DC4400C444DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C5CAF1598DC4300C444DE /* Cocoa.framework */; };
+		673C5CD71598DC4400C444DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 673C5CD51598DC4400C444DE /* InfoPlist.strings */; };
+		673C5CDA1598DC4400C444DE /* SensorStreamingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 673C5CD91598DC4400C444DE /* SensorStreamingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		673C5CD01598DC4400C444DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 673C5CA21598DC4300C444DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673C5CAA1598DC4300C444DE;
+			remoteInfo = SensorStreaming;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		671F92F9162F240300003CFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6735455816545D8300C6B9B1 /* RobotKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		671F92FE162F244000003CFD /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		671F92FF162F244000003CFD /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		6735455616545D7900C6B9B1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		673C5CAB1598DC4300C444DE /* SensorStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673C5CAF1598DC4300C444DE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		673C5CB21598DC4300C444DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		673C5CB31598DC4300C444DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		673C5CB41598DC4300C444DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		673C5CB71598DC4300C444DE /* SensorStreaming-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SensorStreaming-Info.plist"; sourceTree = "<group>"; };
+		673C5CB91598DC4300C444DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		673C5CBB1598DC4300C444DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		673C5CBD1598DC4300C444DE /* SensorStreaming-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SensorStreaming-Prefix.pch"; sourceTree = "<group>"; };
+		673C5CBF1598DC4300C444DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		673C5CC11598DC4300C444DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		673C5CC21598DC4300C444DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		673C5CC51598DC4400C444DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		673C5CCC1598DC4400C444DE /* SensorStreamingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorStreamingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		673C5CCD1598DC4400C444DE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		673C5CD41598DC4400C444DE /* SensorStreamingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SensorStreamingTests-Info.plist"; sourceTree = "<group>"; };
+		673C5CD61598DC4400C444DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		673C5CD81598DC4400C444DE /* SensorStreamingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorStreamingTests.h; sourceTree = "<group>"; };
+		673C5CD91598DC4400C444DE /* SensorStreamingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorStreamingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		673C5CA81598DC4300C444DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CB01598DC4300C444DE /* Cocoa.framework in Frameworks */,
+				671F9302162F244C00003CFD /* IOBluetooth.framework in Frameworks */,
+				671F9303162F244C00003CFD /* IOBluetoothUI.framework in Frameworks */,
+				6735455716545D7900C6B9B1 /* RobotKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC81598DC4400C444DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CCE1598DC4400C444DE /* SenTestingKit.framework in Frameworks */,
+				673C5CCF1598DC4400C444DE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		673C5CA01598DC4300C444DE = {
+			isa = PBXGroup;
+			children = (
+				673C5CB51598DC4300C444DE /* SensorStreaming */,
+				673C5CD21598DC4400C444DE /* SensorStreamingTests */,
+				673C5CAE1598DC4300C444DE /* Frameworks */,
+				673C5CAC1598DC4300C444DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		673C5CAC1598DC4300C444DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CAB1598DC4300C444DE /* SensorStreaming.app */,
+				673C5CCC1598DC4400C444DE /* SensorStreamingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673C5CAE1598DC4300C444DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6735455616545D7900C6B9B1 /* RobotKit.framework */,
+				671F92FE162F244000003CFD /* IOBluetooth.framework */,
+				671F92FF162F244000003CFD /* IOBluetoothUI.framework */,
+				673C5CAF1598DC4300C444DE /* Cocoa.framework */,
+				673C5CCD1598DC4400C444DE /* SenTestingKit.framework */,
+				673C5CB11598DC4300C444DE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		673C5CB11598DC4300C444DE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CB21598DC4300C444DE /* AppKit.framework */,
+				673C5CB31598DC4300C444DE /* CoreData.framework */,
+				673C5CB41598DC4300C444DE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		673C5CB51598DC4300C444DE /* SensorStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CC11598DC4300C444DE /* AppDelegate.h */,
+				673C5CC21598DC4300C444DE /* AppDelegate.m */,
+				673C5CC41598DC4400C444DE /* MainMenu.xib */,
+				673C5CB61598DC4300C444DE /* Supporting Files */,
+			);
+			path = SensorStreaming;
+			sourceTree = "<group>";
+		};
+		673C5CB61598DC4300C444DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CB71598DC4300C444DE /* SensorStreaming-Info.plist */,
+				673C5CB81598DC4300C444DE /* InfoPlist.strings */,
+				673C5CBB1598DC4300C444DE /* main.m */,
+				673C5CBD1598DC4300C444DE /* SensorStreaming-Prefix.pch */,
+				673C5CBE1598DC4300C444DE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		673C5CD21598DC4400C444DE /* SensorStreamingTests */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CD81598DC4400C444DE /* SensorStreamingTests.h */,
+				673C5CD91598DC4400C444DE /* SensorStreamingTests.m */,
+				673C5CD31598DC4400C444DE /* Supporting Files */,
+			);
+			path = SensorStreamingTests;
+			sourceTree = "<group>";
+		};
+		673C5CD31598DC4400C444DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CD41598DC4400C444DE /* SensorStreamingTests-Info.plist */,
+				673C5CD51598DC4400C444DE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		673C5CAA1598DC4300C444DE /* SensorStreaming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673C5CDD1598DC4400C444DE /* Build configuration list for PBXNativeTarget "SensorStreaming" */;
+			buildPhases = (
+				671F92F9162F240300003CFD /* CopyFiles */,
+				673C5CA71598DC4300C444DE /* Sources */,
+				673C5CA81598DC4300C444DE /* Frameworks */,
+				673C5CA91598DC4300C444DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SensorStreaming;
+			productName = SensorStreaming;
+			productReference = 673C5CAB1598DC4300C444DE /* SensorStreaming.app */;
+			productType = "com.apple.product-type.application";
+		};
+		673C5CCB1598DC4400C444DE /* SensorStreamingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673C5CE01598DC4400C444DE /* Build configuration list for PBXNativeTarget "SensorStreamingTests" */;
+			buildPhases = (
+				673C5CC71598DC4400C444DE /* Sources */,
+				673C5CC81598DC4400C444DE /* Frameworks */,
+				673C5CC91598DC4400C444DE /* Resources */,
+				673C5CCA1598DC4400C444DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				673C5CD11598DC4400C444DE /* PBXTargetDependency */,
+			);
+			name = SensorStreamingTests;
+			productName = SensorStreamingTests;
+			productReference = 673C5CCC1598DC4400C444DE /* SensorStreamingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		673C5CA21598DC4300C444DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Orbotix Inc";
+			};
+			buildConfigurationList = 673C5CA51598DC4300C444DE /* Build configuration list for PBXProject "SensorStreaming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 673C5CA01598DC4300C444DE;
+			productRefGroup = 673C5CAC1598DC4300C444DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				673C5CAA1598DC4300C444DE /* SensorStreaming */,
+				673C5CCB1598DC4400C444DE /* SensorStreamingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		673C5CA91598DC4300C444DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CBA1598DC4300C444DE /* InfoPlist.strings in Resources */,
+				673C5CC01598DC4300C444DE /* Credits.rtf in Resources */,
+				673C5CC61598DC4400C444DE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC91598DC4400C444DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CD71598DC4400C444DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		673C5CCA1598DC4400C444DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		673C5CA71598DC4300C444DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CBC1598DC4300C444DE /* main.m in Sources */,
+				673C5CC31598DC4300C444DE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC71598DC4400C444DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CDA1598DC4400C444DE /* SensorStreamingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		673C5CD11598DC4400C444DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673C5CAA1598DC4300C444DE /* SensorStreaming */;
+			targetProxy = 673C5CD01598DC4400C444DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		673C5CB81598DC4300C444DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673C5CB91598DC4300C444DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		673C5CBE1598DC4300C444DE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673C5CBF1598DC4300C444DE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		673C5CC41598DC4400C444DE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673C5CC51598DC4400C444DE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		673C5CD51598DC4400C444DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673C5CD61598DC4400C444DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		673C5CDB1598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		673C5CDC1598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		673C5CDE1598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreaming/SensorStreaming-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		673C5CDF1598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreaming/SensorStreaming-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		673C5CE11598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SensorStreaming.app/Contents/MacOS/SensorStreaming";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreamingTests/SensorStreamingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		673C5CE21598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SensorStreaming.app/Contents/MacOS/SensorStreaming";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreamingTests/SensorStreamingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		673C5CA51598DC4300C444DE /* Build configuration list for PBXProject "SensorStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CDB1598DC4400C444DE /* Debug */,
+				673C5CDC1598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673C5CDD1598DC4400C444DE /* Build configuration list for PBXNativeTarget "SensorStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CDE1598DC4400C444DE /* Debug */,
+				673C5CDF1598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673C5CE01598DC4400C444DE /* Build configuration list for PBXNativeTarget "SensorStreamingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CE11598DC4400C444DE /* Debug */,
+				673C5CE21598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 673C5CA21598DC4300C444DE /* Project object */;
+}
