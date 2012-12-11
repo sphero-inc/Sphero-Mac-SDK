@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671F9302162F244C00003CFD /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671F92FE162F244000003CFD /* IOBluetooth.framework */; };
+		671F9303162F244C00003CFD /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671F92FF162F244000003CFD /* IOBluetoothUI.framework */; };
+		6735454F16545D1800C6B9B1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6735454E16545D1800C6B9B1 /* RobotKit.framework */; };
+		6735455016545D2500C6B9B1 /* RobotKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6735454E16545D1800C6B9B1 /* RobotKit.framework */; };
+		673C5CB01598DC4300C444DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C5CAF1598DC4300C444DE /* Cocoa.framework */; };
+		673C5CCF1598DC4400C444DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C5CAF1598DC4300C444DE /* Cocoa.framework */; };
+		67BA9C33163715A2007E84F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BA9C22163715A2007E84F0 /* AppDelegate.m */; };
+		67BA9C34163715A2007E84F0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 67BA9C23163715A2007E84F0 /* Credits.rtf */; };
+		67BA9C35163715A2007E84F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67BA9C25163715A2007E84F0 /* InfoPlist.strings */; };
+		67BA9C36163715A2007E84F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BA9C27163715A2007E84F0 /* MainMenu.xib */; };
+		67BA9C37163715A2007E84F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BA9C29163715A2007E84F0 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		673C5CD01598DC4400C444DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 673C5CA21598DC4300C444DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673C5CAA1598DC4300C444DE;
+			remoteInfo = SensorStreaming;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		671F92F9162F240300003CFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6735455016545D2500C6B9B1 /* RobotKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		671F92FE162F244000003CFD /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		671F92FF162F244000003CFD /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		6735454E16545D1800C6B9B1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		673C5CAB1598DC4300C444DE /* MouseController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673C5CAF1598DC4300C444DE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		673C5CB21598DC4300C444DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		673C5CB31598DC4300C444DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		673C5CB41598DC4300C444DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		673C5CCC1598DC4400C444DE /* MouseControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BA9C21163715A2007E84F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67BA9C22163715A2007E84F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67BA9C24163715A2007E84F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		67BA9C26163715A2007E84F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67BA9C28163715A2007E84F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		67BA9C29163715A2007E84F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67BA9C2B163715A2007E84F0 /* MouseController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MouseController-Info.plist"; sourceTree = "<group>"; };
+		67BA9C2C163715A2007E84F0 /* MouseController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MouseController-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		673C5CA81598DC4300C444DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CB01598DC4300C444DE /* Cocoa.framework in Frameworks */,
+				671F9302162F244C00003CFD /* IOBluetooth.framework in Frameworks */,
+				671F9303162F244C00003CFD /* IOBluetoothUI.framework in Frameworks */,
+				6735454F16545D1800C6B9B1 /* RobotKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC81598DC4400C444DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673C5CCF1598DC4400C444DE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		673C5CA01598DC4300C444DE = {
+			isa = PBXGroup;
+			children = (
+				67BA9C20163715A2007E84F0 /* MouseController */,
+				673C5CAE1598DC4300C444DE /* Frameworks */,
+				673C5CAC1598DC4300C444DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		673C5CAC1598DC4300C444DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CAB1598DC4300C444DE /* MouseController.app */,
+				673C5CCC1598DC4400C444DE /* MouseControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673C5CAE1598DC4300C444DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6735454E16545D1800C6B9B1 /* RobotKit.framework */,
+				671F92FE162F244000003CFD /* IOBluetooth.framework */,
+				671F92FF162F244000003CFD /* IOBluetoothUI.framework */,
+				673C5CAF1598DC4300C444DE /* Cocoa.framework */,
+				673C5CB11598DC4300C444DE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		673C5CB11598DC4300C444DE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				673C5CB21598DC4300C444DE /* AppKit.framework */,
+				673C5CB31598DC4300C444DE /* CoreData.framework */,
+				673C5CB41598DC4300C444DE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		67BA9C20163715A2007E84F0 /* MouseController */ = {
+			isa = PBXGroup;
+			children = (
+				67BA9C21163715A2007E84F0 /* AppDelegate.h */,
+				67BA9C22163715A2007E84F0 /* AppDelegate.m */,
+				67BA9C23163715A2007E84F0 /* Credits.rtf */,
+				67BA9C25163715A2007E84F0 /* InfoPlist.strings */,
+				67BA9C27163715A2007E84F0 /* MainMenu.xib */,
+				67BA9C29163715A2007E84F0 /* main.m */,
+				67BA9C2B163715A2007E84F0 /* MouseController-Info.plist */,
+				67BA9C2C163715A2007E84F0 /* MouseController-Prefix.pch */,
+			);
+			path = MouseController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		673C5CAA1598DC4300C444DE /* MouseController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673C5CDD1598DC4400C444DE /* Build configuration list for PBXNativeTarget "MouseController" */;
+			buildPhases = (
+				671F92F9162F240300003CFD /* CopyFiles */,
+				673C5CA71598DC4300C444DE /* Sources */,
+				673C5CA81598DC4300C444DE /* Frameworks */,
+				673C5CA91598DC4300C444DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouseController;
+			productName = SensorStreaming;
+			productReference = 673C5CAB1598DC4300C444DE /* MouseController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		673C5CCB1598DC4400C444DE /* MouseControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673C5CE01598DC4400C444DE /* Build configuration list for PBXNativeTarget "MouseControllerTests" */;
+			buildPhases = (
+				673C5CC71598DC4400C444DE /* Sources */,
+				673C5CC81598DC4400C444DE /* Frameworks */,
+				673C5CC91598DC4400C444DE /* Resources */,
+				673C5CCA1598DC4400C444DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				673C5CD11598DC4400C444DE /* PBXTargetDependency */,
+			);
+			name = MouseControllerTests;
+			productName = SensorStreamingTests;
+			productReference = 673C5CCC1598DC4400C444DE /* MouseControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		673C5CA21598DC4300C444DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Orbotix Inc";
+			};
+			buildConfigurationList = 673C5CA51598DC4300C444DE /* Build configuration list for PBXProject "MouseController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 673C5CA01598DC4300C444DE;
+			productRefGroup = 673C5CAC1598DC4300C444DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				673C5CAA1598DC4300C444DE /* MouseController */,
+				673C5CCB1598DC4400C444DE /* MouseControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		673C5CA91598DC4300C444DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BA9C34163715A2007E84F0 /* Credits.rtf in Resources */,
+				67BA9C35163715A2007E84F0 /* InfoPlist.strings in Resources */,
+				67BA9C36163715A2007E84F0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC91598DC4400C444DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		673C5CCA1598DC4400C444DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		673C5CA71598DC4300C444DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BA9C33163715A2007E84F0 /* AppDelegate.m in Sources */,
+				67BA9C37163715A2007E84F0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673C5CC71598DC4400C444DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		673C5CD11598DC4400C444DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673C5CAA1598DC4300C444DE /* MouseController */;
+			targetProxy = 673C5CD01598DC4400C444DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67BA9C23163715A2007E84F0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67BA9C24163715A2007E84F0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		67BA9C25163715A2007E84F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67BA9C26163715A2007E84F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		67BA9C27163715A2007E84F0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67BA9C28163715A2007E84F0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		673C5CDB1598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		673C5CDC1598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		673C5CDE1598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseController/MouseController-Prefix.pch";
+				INFOPLIST_FILE = "MouseController/MouseController-Info.plist";
+				PRODUCT_NAME = MouseController;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		673C5CDF1598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseController/MouseController-Prefix.pch";
+				INFOPLIST_FILE = "MouseController/MouseController-Info.plist";
+				PRODUCT_NAME = MouseController;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		673C5CE11598DC4400C444DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SensorStreaming.app/Contents/MacOS/SensorStreaming";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreamingTests/SensorStreamingTests-Info.plist";
+				PRODUCT_NAME = MouseControllerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		673C5CE21598DC4400C444DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SensorStreaming.app/Contents/MacOS/SensorStreaming";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreamingTests/SensorStreamingTests-Info.plist";
+				PRODUCT_NAME = MouseControllerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		673C5CA51598DC4300C444DE /* Build configuration list for PBXProject "MouseController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CDB1598DC4400C444DE /* Debug */,
+				673C5CDC1598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673C5CDD1598DC4400C444DE /* Build configuration list for PBXNativeTarget "MouseController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CDE1598DC4400C444DE /* Debug */,
+				673C5CDF1598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673C5CE01598DC4400C444DE /* Build configuration list for PBXNativeTarget "MouseControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673C5CE11598DC4400C444DE /* Debug */,
+				673C5CE21598DC4400C444DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 673C5CA21598DC4300C444DE /* Project object */;
+}
