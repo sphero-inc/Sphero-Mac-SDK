@@ -2,7 +2,7 @@
 
 # KeyDrive
 
-This sample demonstartes how to use keyboard input to drive and calibrate Sphero.  If you are planning on making an app that accepts keyboard input to control the robot, this is a good place to start.
+This sample demonstrates how to use keyboard input to drive and calibrate Sphero.  If you are planning on making an app that accepts keyboard input to control the robot, this is a good place to start.
 
 ## Capturing Keyboard Input
 
@@ -23,7 +23,7 @@ To make Sphero drive, we send a Roll Command when an arrow is pressed:
 ## Calibration
 
     
-The isCalibrating boolean variable is toggled on and off when the Shift Key is pressed down and up.  When the Shift Key is pressed down, we send a Calibrate Command to Sphero, to make it current heading a value of 0 degrees, and then wait for arrow key presses.  If the user pressed the left arrow key, the application sends a roll command with a periodically decreasing heading so that it rotates counter-clockwise.  If the user pressed the right arrow key, the applicatin send a roll command with a periodically increasing heading so that it rotates clockwise.  When the user lets up on the Shift Key, the application sends another Calibrate Command setting the current heading to 0 degrees.  The Shift Key logic code is below:
+The isCalibrating boolean variable is toggled on and off when the Shift Key is pressed down and up.  When the Shift Key is pressed down, we send a Calibrate Command to Sphero, to make it current heading a value of 0 degrees, and then wait for arrow key presses.  If the user pressed the left arrow key, the application sends a roll command with a periodically decreasing heading so that it rotates counter-clockwise.  If the user pressed the right arrow key, the application send a roll command with a periodically increasing heading so that it rotates clockwise.  When the user lets up on the Shift Key, the application sends another Calibrate Command setting the current heading to 0 degrees.  The Shift Key logic code is below:
 
 	- (void)flagsChanged:(NSEvent *)theEvent
 	{

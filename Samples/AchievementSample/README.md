@@ -35,7 +35,7 @@ After clicking **Add Achievement** you will see this screen:
 
 - **Point Value** - This is the number of points the achievement is worth.  All of an app’s achievements can add up to no more than 1,000 points, but can be less.
 
-- **Image** - This is the badge that is displayed in Sphero World to represent the acheivement.
+- **Image** - This is the badge that is displayed in Sphero World to represent the achievement.
 
 - **Description** - This is the description of the achievement displayed to the user. (e.g. “Drive Sphero 1 Mile” or “Collect 100 Widgets”).
 
@@ -43,7 +43,7 @@ After clicking **Add Achievement** you will see this screen:
 
 - **Threshold** - This is an integer indicating how many events of this achievement’s type must happen before the achievement is earned.  This allows you to easily create progressive achievements for the same type of event while also allowing you to track more complex achievements in your own game code and make the threshold 1. (e.g. using the 5 hole-in-one achievement example from above you would put 5 as the threshold)
 
-- **Notification When Won** - This is the message displayed to the user on Sphero World when the acheivement has been earned.
+- **Notification When Won** - This is the message displayed to the user on Sphero World when the achievement has been earned.
 
 
 ## Integrating SpheroWorld into your Application (Mac OSX) 
@@ -55,7 +55,7 @@ The first step when integrating your Mac OSX application with any part of Sphero
 
 ![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/catball.png) 
 
-In the *applicaiton:didFinishLaunchingWithOptions:* method inside of the application delegate of your Mac OSX application you will need to set the application id and secret before using any Sphero World functionality.  It is easiest to ensure this happens by making it your first line of code.  **You will need to be sure to import RobotKit.h in your app delegate.**  See example below:
+In the *application:didFinishLaunchingWithOptions:* method inside of the application delegate of your Mac OSX application you will need to set the application id and secret before using any Sphero World functionality.  It is easiest to ensure this happens by making it your first line of code.  **You will need to be sure to import RobotKit.h in your app delegate.**  See example below:
 
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     {
@@ -66,7 +66,7 @@ In the *applicaiton:didFinishLaunchingWithOptions:* method inside of the applica
 
 ### Allowing app users to login to SpheroWorld
 
-You will need to provide a way for users to login to Sphero World within your applicaiton’s UI in order for them to track achievements.  The user should only need to login once to authorize your application, a view controller is provided to make this easy.  After the first time this view is displayed it will show the list of your game’s achievements along with the users progress.
+You will need to provide a way for users to login to Sphero World within your application’s UI in order for them to track achievements.  The user should only need to login once to authorize your application, a view controller is provided to make this easy.  After the first time this view is displayed it will show the list of your game’s achievements along with the users progress.
 
     -(IBAction)spheroWorldPressed:(id)sender {
 	    //Display the SpheroWorld authorization view, it will display the user's achievements if already logged in
@@ -117,7 +117,7 @@ When the notification fires you can extract the RKAchievement object the user ea
 	    //Get the achievement that was earned from the userInfo dictionary
 	    RKAchievement *achievement = [notification.userInfo objectForKey:RKAchievementEarnedAchievementKey];
 	    
-	    //This would be the appropriate time to play a sound a let the user know they earned an achievment
+	    //This would be the appropriate time to play a sound a let the user know they earned an achievement
 	    //RobotUIKit has a view made for doing this, we are going to show how to use it
 	    
 	    //RobotUIKit resources like images and nib files stored in an external bundle and the path must be specified
@@ -136,18 +136,18 @@ When the notification fires you can extract the RKAchievement object the user ea
 
 ### Connect your application to SpheroWorld
 
-The first step to integrate your application with SpheroWorld is to pass in your applicaion id and secret string (*obtained from SpheroWorld as shown below*) when your main activity starts before you make any calls to RobotLibrary. 
+The first step to integrate your application with SpheroWorld is to pass in your application id and secret string (*obtained from SpheroWorld as shown below*) when your main activity starts before you make any calls to RobotLibrary. 
 
 ![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/catball.png) 
 
  An example of setting up the Achievement Manager is shown below.
      
-    // Set APP ID to receive acheivements
+    // Set APP ID to receive achievements
     [RKSpheroWorldAuthMac setAppID:@"macaea4beca16e9960ff7d766d05b2fbcf2d"
                             secret:@"QBmUyk5qbR7asBhVzG9z"];
                             
     
-And this sets up a callback selector to receive a notification when the user earned an acheivement.
+And this sets up a callback selector to receive a notification when the user earned an achievement.
 
 ### Add achievement event tracking to your application
 
@@ -181,7 +181,7 @@ The Achievement Manager will call your select you registered below:
                            withObject:achievement
                         waitUntilDone:NO];
     
-    	//This would be the appropriate time to play a sound a let the user know they earned an achievment
+    	//This would be the appropriate time to play a sound a let the user know they earned an achievement
 	}
 
 	-(void) displayAchievementAlertWithAcheivement:(RKAchievement*)achievement {

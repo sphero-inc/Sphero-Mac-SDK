@@ -11,10 +11,10 @@ This sample application uses the RKOrbBasicProgram class to do it's dirty work. 
 Loads the selected program onto Sphero. A RKOrbBasicProgram object will start listening to command responses to keep track of the state of the program. When the program is erased the object will stop listening to orbBasic command responses. This allows other RKOrbBasicProgram objects to load their programs and track their state.
 
 ### Execute
-Excute sends a command to Sphero to start executing the currently loaded program. A RKOrbBasicProgram object will load the program if the program isn't already loaded. You can set the line that the program starts at with the startLineNumber property.
+Execute sends a command to Sphero to start executing the currently loaded program. A RKOrbBasicProgram object will load the program if the program isn't already loaded. You can set the line that the program starts at with the startLineNumber property.
 
 ### Abort
-Aborts the execution of the executing program which is useful for programs that loop infinitly.
+Aborts the execution of the executing program which is useful for programs that loop infinitely.
 
 ### Erase 
 Erases the current program from the storage on Sphero. A RKOrbBasicProgram object resets it state, and stops listening to responses to orbBasic commands.

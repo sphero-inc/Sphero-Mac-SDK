@@ -2,7 +2,7 @@
 
 # Macro Sample
 
-This sample demonstartes how to how to programatically create macros and run them on Sphero.  For those who do not know, macros are a preconstructed set of commands for Sphero to do.  This is beneficial, becuase it eliminates any Bluetooth transmission latency that may occur and it also is a great way to make Sphero travel in circles, shapes, or flash to music (if you know the BPM).
+This sample demonstrates how to how to programmatically create macros and run them on Sphero.  For those who do not know, macros are a pre-constructed set of commands for Sphero to do.  This is beneficial, because it eliminates any Bluetooth transmission latency that may occur and it also is a great way to make Sphero travel in circles, shapes, or flash to music (if you know the BPM).
 	
 ## Creating Macros
 

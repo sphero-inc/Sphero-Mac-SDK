@@ -2,7 +2,7 @@
 
 # Mouse Controller
 
-This sample demonstartes how to use data streaming values of roll, pitch, and yaw to control the mouse of your computer.  Not only is this a neat little trick that could be greatly improved, it shows how to control on screen objects using Sphero.
+This sample demonstrates how to use data streaming values of roll, pitch, and yaw to control the mouse of your computer.  Not only is this a neat little trick that could be greatly improved, it shows how to control on screen objects using Sphero.
 
 ## Understand Roll, Pitch, and Yaw
 
@@ -44,7 +44,7 @@ This computes a new mouse x-position by using an exponentially increasing speed 
         mousePositionChanged = YES;
     }
     
-Now, to actually move the mouse, we have to post a CGMouseEvent to be interpretted by our computer to move.  The code is below:
+Now, to actually move the mouse, we have to post a CGMouseEvent to be interpreted by our computer to move.  The code is below:
 
     if( mousePositionChanged ) {
         if( !isMouseLeftDown ) {
@@ -60,7 +60,7 @@ Now, to actually move the mouse, we have to post a CGMouseEvent to be interprett
         }
    }
    
-It is a good idea to only move the mouse when the position has changed.  That way, you give the user the oppurtunity to click the button to stop using the mouse if they are incapable of figuring out how to use it.
+It is a good idea to only move the mouse when the position has changed.  That way, you give the user the opportunity to click the button to stop using the mouse if they are incapable of figuring out how to use it.
 
 ## Performing Mouse Click Events with Yaw
 
