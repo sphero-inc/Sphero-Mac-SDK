@@ -34,14 +34,14 @@ The Mac SDK is a direct port from the iOS SDK.  Therefore, we tried to keep the 
 
 The first step to using our SDK is to run the samples we have included.  It is the easiest way to get started.  Simply open the .xcodeproject file of any of our samples and run in Xcode to see a few examples of what Sphero can do.  Currently, we have these samples:
 
-* [HelloWorld](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/samples/HelloWorld) - Connect to Sphero and blink the LED.  This is the most compact and easy to follow sample for dealing with Sphero.  
+* [HelloWorld](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/Samples/HelloWorld) - Connect to Sphero and blink the LED.  This is the most compact and easy to follow sample for dealing with Sphero.  
 
-* [SensorStreaming](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/samples/SensorStreaming) - If you want to use the sensor data from Sphero, you should check this sample out.  Just simply register as an observer to the data, Pay attention to starting and stoping streaming during the application life cycle.
+* [SensorStreaming](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/Samples/SensorStreaming) - If you want to use the sensor data from Sphero, you should check this sample out.  Just simply register as an observer to the data, Pay attention to starting and stoping streaming during the application life cycle.
 
-* [KeyDrive](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/samples/KeyDrive) - This sample demonstrates how to use keyboard input to drive Sphero.  It also demonstrates how to calibrate Sphero.
+* [KeyDrive](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/Samples/KeyDrive) - This sample demonstrates how to use keyboard input to drive Sphero.  It also demonstrates how to calibrate Sphero.
 
-* [MouseController](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/samples/MouseController) - This sample show how you can make sense of the data streaming from Sphero to control behavior, like your computer mouse.  It allows you to move the mouse with IMU values of roll and pitch, and left click and right click with the yaw angle.
-* [MacroSample](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/samples/MacroSample) - This sample shows you how to build macros programmatically and send them to Sphero.  
+* [MouseController](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/Samples/MouseController) - This sample show how you can make sense of the data streaming from Sphero to control behavior, like your computer mouse.  It allows you to move the mouse with IMU values of roll and pitch, and left click and right click with the yaw angle.
+* [MacroSample](https://github.com/orbotix/Sphero-Mac-SDK/tree/master/Samples/MacroSample) - This sample shows you how to build macros programmatically and send them to Sphero.  
 
 
 
