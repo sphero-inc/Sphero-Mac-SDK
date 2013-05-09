@@ -51,7 +51,7 @@ The first step to using our SDK is to run the samples we have included.  It is t
 	
 There are always those cases where you already developed an awesome game or app and want to integrate Sphero functionality or controllability into the project. For those cases we have made it possible to integrate our libraries into your existing project, including some nifty pre-built user interface tools. 
 
- - Download the current [Sphero Mac SDK](https://github.com/orbotix/Sphero-iOS-SDK/zipball/master).
+ - Download the current [Sphero Mac SDK](https://github.com/orbotix/Sphero-Mac-SDK/zipball/master).
  
  ---
 
@@ -147,7 +147,8 @@ Build Phases tab of your project should now look like this:
 ## Using the Sphero Mac SDK
 
 ---
-This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
+
+This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `AppDelegate.m` from
 
